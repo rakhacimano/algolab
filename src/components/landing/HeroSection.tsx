@@ -2,12 +2,15 @@
 
 import Link from "next/link";
 import { motion } from "framer-motion";
+import GridPattern from "./GridPattern";
 
 export default function HeroSection() {
     return (
         <section className="relative overflow-hidden min-h-screen flex items-center justify-center pt-32 pb-12">
             {/* Background gradient */}
             <div className="absolute inset-0 bg-gradient-to-br from-primary-50 via-surface-alt to-accent-50" />
+            <GridPattern />
+            {/* Soft highlight */}
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 h-[500px] w-[500px] rounded-full bg-primary-200/30 blur-[100px]" />
 
             <div className="relative mx-auto max-w-3xl px-6 text-center z-10">
