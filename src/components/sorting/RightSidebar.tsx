@@ -17,7 +17,7 @@ export default function RightSidebar({
     totalSteps,
 }: RightSidebarProps) {
     return (
-        <aside className="w-96 flex-none bg-surface shadow-[-4px_0_10px_-2px_rgba(0,0,0,0.02)] z-20 h-full overflow-y-auto flex flex-col border-l border-border">
+        <aside className="w-full lg:w-96 flex-none bg-surface shadow-[-4px_0_10px_-2px_rgba(0,0,0,0.02)] z-20 h-full overflow-y-auto flex flex-col border-l border-border">
             <RightPanel
                 algorithm={algorithm}
                 currentStep={currentStep}

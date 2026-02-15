@@ -6,6 +6,8 @@ import { Step } from "@/lib/types";
 
 interface CenterVisualizerProps {
     currentStep: Step | null;
+    currentStepIndex: number;
+    totalSteps: number;
     showValues: boolean;
     isPlaying: boolean;
     isFinished: boolean;
@@ -22,6 +24,8 @@ interface CenterVisualizerProps {
 
 export default function CenterVisualizer({
     currentStep,
+    currentStepIndex,
+    totalSteps,
     showValues,
     isPlaying,
     isFinished,
@@ -40,6 +44,20 @@ export default function CenterVisualizer({
             {/* Visualizer Area */}
             <div className="flex-1 p-4 flex flex-col overflow-hidden">
                 <div className="flex-1 w-full bg-surface rounded-2xl border border-border shadow-sm p-4 relative flex flex-col">
+                    {/* Step Info Bar */}
+                    <div className="flex-none mb-4 flex items-center justify-between">
+                        <div className="flex items-center gap-3">
+                            <span className="px-2.5 py-1 rounded-lg bg-surface-alt border border-border text-xs font-mono font-bold text-text-secondary">
+                                Step {currentStepIndex + 1} / {totalSteps}
+                            </span>
+                            {currentStep && (
+                                <p className="text-sm font-medium text-text-primary line-clamp-1">
+                                    {currentStep.message}
+                                </p>
+                            )}
+                        </div>
+                    </div>
+
                     <ArrayVisualizer step={currentStep} showValues={showValues} />
                 </div>
             </div>

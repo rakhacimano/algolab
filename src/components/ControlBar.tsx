@@ -30,7 +30,7 @@ export default function ControlBar({
     onShowValuesChange,
 }: ControlBarProps) {
     return (
-        <div className="flex flex-wrap items-center justify-between gap-4 py-4 px-2 w-full max-w-5xl mx-auto">
+        <div className="flex flex-wrap items-center justify-center md:justify-between gap-4 py-4 px-2 w-full max-w-5xl mx-auto">
             {/* Left Group: Playback */}
             <div className="flex items-center gap-2">
                 <button
@@ -164,8 +164,8 @@ export default function ControlBar({
                 <button
                     onClick={() => onShowValuesChange(!showValues)}
                     className={`flex h-10 items-center gap-2 rounded-xl border px-4 text-sm font-medium transition-colors ${showValues
-                            ? "bg-primary-50 border-primary-200 text-primary-700 shadow-sm"
-                            : "bg-surface border-border text-text-muted hover:bg-surface-alt hover:text-text-secondary"
+                        ? "bg-primary-50 border-primary-200 text-primary-700 shadow-sm"
+                        : "bg-surface border-border text-text-muted hover:bg-surface-alt hover:text-text-secondary"
                         }`}
                 >
                     <svg

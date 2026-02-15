@@ -21,7 +21,7 @@ export default function LeftSidebar({
     currentSize,
 }: LeftSidebarProps) {
     return (
-        <aside className="w-80 flex-none bg-surface border-r border-border hidden lg:block h-full overflow-y-auto">
+        <aside className="w-full lg:w-80 flex-none bg-surface border-r border-border h-full overflow-y-auto">
             <div className="p-6">
                 <InputControls
                     algorithms={algorithms}
