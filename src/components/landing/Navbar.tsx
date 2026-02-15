@@ -18,7 +18,7 @@ export default function Navbar() {
                         />
                     </div>
                 </Link>
-                <div className="flex items-center gap-6">
+                <div className="flex items-center gap-6 hidden md:flex">
                     <div className="hidden md:flex items-center gap-6 text-sm font-medium text-text-secondary">
                         <Link href="/sorting" className="hover:text-primary-600 transition-colors">Algorithms</Link>
                         <Link href="#features" className="hover:text-primary-600 transition-colors">Features</Link>
