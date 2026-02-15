@@ -113,43 +113,43 @@ export const insertionSortConfig: Algorithm = {
     id: "insertion",
     name: "Insertion Sort",
     description:
-        "Membangun array terurut satu per satu dengan menyisipkan elemen ke posisi yang tepat.",
+        "Builds a sorted array one item at a time by inserting elements into their correct position.",
     instruction: {
-        title: "Langkah-langkah Insertion Sort",
+        title: "Insertion Sort Steps",
         steps: [
             {
                 text:
-                    "Anggap elemen pertama (indeks 0) sudah berada pada posisi yang benar (terurut).",
+                    "Assume the first element (index 0) is already in the correct sorted position.",
             },
             {
                 text:
-                    "Mulai proses dari elemen kedua (indeks 1) sampai elemen terakhir.",
+                    "Start the process from the second element (index 1) to the last element.",
             },
             {
-                text: "Pada setiap iterasi (untuk elemen ke-i):",
+                text: "In each iteration (for element i):",
                 substeps: [
-                    "Ambil elemen tersebut dan simpan sebagai 'key' (nilai yang akan disisipkan).",
-                    "Bandingkan 'key' dengan elemen-elemen di sebelah kirinya yang sudah terurut.",
+                    "Take that element and store it as 'key' (the value to be inserted).",
+                    "Compare 'key' with the sorted elements to its left.",
                 ],
             },
             {
-                text: "Lakukan proses penggeseran:",
+                text: "Perform the shifting process:",
                 substeps: [
-                    "Selama elemen di sebelah kiri lebih besar dari 'key', geser elemen tersebut satu langkah ke kanan.",
-                    "Lanjutkan pemeriksaan ke elemen di sebelah kirinya lagi.",
-                ],
-            },
-            {
-                text:
-                    "Jika ditemukan elemen yang lebih kecil atau sama dengan 'key', atau jika sudah sampai di ujung kiri array:",
-                substeps: [
-                    "Hentikan proses penggeseran.",
-                    "Sisipkan 'key' di posisi kosong yang tersedia.",
+                    "While the element on the left is greater than 'key', shift that element one step to the right.",
+                    "Continue checking the element to its left.",
                 ],
             },
             {
                 text:
-                    "Ulangi proses ini sampai elemen terakhir berhasil disisipkan pada posisi yang tepat.",
+                    "If a smaller or equal element is found, or if the left end of the array is reached:",
+                substeps: [
+                    "Stop the shifting process.",
+                    "Insert 'key' into the correct available position.",
+                ],
+            },
+            {
+                text:
+                    "Repeat this process until the last element is successfully inserted.",
             },
         ],
     },

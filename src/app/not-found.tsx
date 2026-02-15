@@ -9,7 +9,15 @@ export default function NotFound() {
             {/* Minimal Navbar */}
             <nav className="flex items-center justify-between px-6 py-6 md:px-12 max-w-7xl mx-auto w-full">
                 <Link href="/" className="flex items-center gap-2 group">
-                    <span className="text-xl font-bold tracking-tight">AlgoLab</span>
+                    <div className="relative h-10 w-40">
+                        <Image
+                            src="/logo.png"
+                            alt="AlgoPad"
+                            fill
+                            className="object-contain object-left"
+                            priority
+                        />
+                    </div>
                 </Link>
                 <div className="flex items-center gap-6">
                     <Link

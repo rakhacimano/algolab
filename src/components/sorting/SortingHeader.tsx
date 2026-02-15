@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { Algorithm } from "@/lib/types";
 
 interface SortingHeaderProps {
@@ -13,12 +14,15 @@ export default function SortingHeader({ algorithm }: SortingHeaderProps) {
             <div className="h-full mx-auto flex w-full max-w-[1920px] items-center justify-between px-6">
                 <div className="flex items-center gap-4">
                     <Link href="/" className="flex items-center gap-2 group">
-                        <div className="flex h-9 w-9 items-center justify-center rounded-xl bg-primary-600 text-white font-bold text-sm transition-transform group-hover:scale-105 shadow-lg shadow-primary-600/20">
-                            AL
+                        <div className="relative h-10 w-40">
+                            <Image
+                                src="/logo.png"
+                                alt="AlgoPad"
+                                fill
+                                className="object-contain object-left"
+                                priority
+                            />
                         </div>
-                        <span className="text-xl font-bold text-text-primary tracking-tight">
-                            AlgoLab
-                        </span>
                     </Link>
                     <div className="h-6 w-px bg-border hidden sm:block mx-2" />
                     <h1 className="text-lg font-semibold text-text-primary hidden sm:block">

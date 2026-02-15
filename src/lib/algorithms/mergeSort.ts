@@ -222,7 +222,7 @@ export const mergeSortConfig: Algorithm = {
     id: "merge",
     name: "Merge Sort",
     description:
-        "Algoritma Divide and Conquer yang membagi array menjadi dua bagian, mengurutkannya secara rekursif, lalu menggabungkannya.",
+        "A Divide and Conquer algorithm that splits the array into two halves, recursively sorts them, and then merges them back together.",
     instruction: {
         title: "Steps (How it works)",
         steps: [

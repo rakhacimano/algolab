@@ -218,7 +218,7 @@ export const heapSortConfig: Algorithm = {
     id: "heap",
     name: "Heap Sort",
     description:
-        "Algoritma berbasis binary heap yang mengubah array menjadi Max Heap lalu mengambil elemen terbesar satu per satu.",
+        "A binary heap-based algorithm that converts the array into a Max Heap and then extracts the largest element one by one.",
     instruction: {
         title: "Steps (How it works)",
         steps: [

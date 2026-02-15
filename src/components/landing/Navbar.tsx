@@ -1,25 +1,35 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Navbar() {
     return (
-        <nav className="sticky top-0 z-50 border-b border-border bg-surface/80 backdrop-blur-xl">
-            <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
-                <Link href="/" className="flex items-center gap-2">
-                    <div className="flex h-9 w-9 items-center justify-center rounded-xl bg-primary-600 text-white font-bold text-sm">
-                        AL
+        <nav className="fixed top-6 left-1/2 -translate-x-1/2 z-50 w-[90%] max-w-4xl rounded-full border border-white/20 bg-white/70 backdrop-blur-xl shadow-xl ring-1 ring-black/5 transition-all">
+            <div className="mx-auto flex items-center justify-between px-6 py-3">
+                <Link href="/" className="flex items-center gap-2.5">
+                    <div className="relative h-10 w-40">
+                        <Image
+                            src="/logo.png"
+                            alt="AlgoPad"
+                            fill
+                            className="object-contain object-left"
+                            priority
+                        />
                     </div>
-                    <span className="text-xl font-bold text-text-primary">
-                        AlgoLab
-                    </span>
                 </Link>
-                <Link
-                    href="/sorting"
-                    className="rounded-xl bg-primary-600 px-5 py-2.5 text-sm font-semibold text-white transition-all hover:bg-primary-700 hover:shadow-lg hover:shadow-primary-600/25"
-                >
-                    Start Learning
-                </Link>
+                <div className="flex items-center gap-6">
+                    <div className="hidden md:flex items-center gap-6 text-sm font-medium text-text-secondary">
+                        <Link href="/sorting" className="hover:text-primary-600 transition-colors">Algorithms</Link>
+                        <Link href="#features" className="hover:text-primary-600 transition-colors">Features</Link>
+                    </div>
+                    <Link
+                        href="/sorting"
+                        className="rounded-full bg-primary-600 px-5 py-2 text-sm font-semibold text-white shadow-lg shadow-primary-600/20 transition-all hover:bg-primary-700 hover:shadow-xl hover:shadow-primary-600/30 hover:-translate-y-0.5 active:scale-95"
+                    >
+                        Start Learning
+                    </Link>
+                </div>
             </div>
         </nav>
     );

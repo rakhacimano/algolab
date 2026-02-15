@@ -175,7 +175,7 @@ export const quickSortConfig: Algorithm = {
     id: "quick",
     name: "Quick Sort",
     description:
-        "Algoritma Divide and Conquer yang memilih 'pivot' dan mempartisi array sehingga elemen lebih kecil di kiri dan lebih besar di kanan.",
+        "A Divide and Conquer algorithm that picks a 'pivot' and partitions the array such that smaller elements are on the left and larger ones on the right.",
     instruction: {
         title: "Steps (How it works)",
         steps: [

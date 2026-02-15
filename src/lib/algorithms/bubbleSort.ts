@@ -93,38 +93,38 @@ export const bubbleSortConfig: Algorithm = {
     id: "bubble",
     name: "Bubble Sort",
     description:
-        "Algoritma pengurutan sederhana yang berulang kali menukar elemen yang berdekatan jika urutannya salah.",
+        "A simple sorting algorithm that repeatedly swaps adjacent elements if they are in the wrong order.",
     instruction: {
-        title: "Langkah-langkah Bubble Sort",
+        title: "Bubble Sort Steps",
         steps: [
-            { text: "Mulai dari elemen pertama array." },
+            { text: "Start with the first element of the array." },
             {
                 text:
-                    "Lakukan proses perulangan untuk beberapa putaran (pass), dari pass ke-1 sampai pass ke-(n-1).",
+                    "Repeat the process for several passes, from pass 1 to pass (n-1).",
             },
             {
-                text: "Pada setiap pass:",
+                text: "In each pass:",
                 substeps: [
-                    "Bandingkan elemen A[j] dengan elemen setelahnya yaitu A[j+1].",
-                    "Jika A[j] lebih besar daripada A[j+1], maka tukar posisi kedua elemen tersebut.",
-                    "Jika tidak, biarkan posisinya tetap.",
-                    "Ulangi perbandingan tersebut terus menerus dari awal array sampai mendekati akhir.",
+                    "Compare element A[j] with the next element A[j+1].",
+                    "If A[j] is greater than A[j+1], swap their positions.",
+                    "Otherwise, leave them as is.",
+                    "Repeat this comparison continuously from the start of the array until near the end.",
                 ],
             },
             {
-                text: "Setelah satu pass selesai:",
+                text: "After one pass is complete:",
                 substeps: [
-                    "Elemen terbesar pada array akan \u201cmengambang\u201d ke bagian paling kanan.",
-                    "Karena elemen paling kanan sudah benar posisinya, maka pada pass berikutnya kita tidak perlu membandingkan bagian itu lagi.",
+                    "The largest element in the array will 'float' to the rightmost position.",
+                    "Since the rightmost element is already in the correct position, we don't need to check that part again in the next pass.",
                 ],
             },
             {
                 text:
-                    "Proses ini terus dilakukan sampai semua pass selesai atau sampai tidak ada pertukaran sama sekali.",
+                    "This process continues until all passes are complete or until no swaps occur at all.",
             },
             {
                 text:
-                    "Jika dalam satu pass tidak terjadi pertukaran, maka array sudah terurut dan algoritma bisa berhenti lebih cepat.",
+                    "If no swaps occur in a pass, the array is already sorted and the algorithm can stop early.",
             },
         ],
     },
