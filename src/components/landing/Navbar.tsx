@@ -7,13 +7,13 @@ export default function Navbar() {
     return (
         <nav className="fixed top-6 left-1/2 -translate-x-1/2 z-50 w-[90%] max-w-4xl rounded-full border border-white/20 bg-white/70 backdrop-blur-xl shadow-xl ring-1 ring-black/5 transition-all">
             <div className="mx-auto flex items-center justify-between px-6 py-3">
-                <Link href="/" className="flex items-center gap-2.5">
+                <Link href="/" className="flex items-center gap-2.5 mx-auto md:mx-0">
                     <div className="relative h-10 w-40">
                         <Image
                             src="/logo.png"
                             alt="AlgoPad"
                             fill
-                            className="object-contain object-left"
+                            className="object-contain object-center md:object-left"
                             priority
                         />
                     </div>

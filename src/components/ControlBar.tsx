@@ -140,12 +140,12 @@ export default function ControlBar({
             </div>
 
             {/* Right Group: Speed & Display */}
-            <div className="flex items-center gap-6">
-                <div className="flex items-center gap-3">
+            <div className="flex items-center gap-4 w-full md:w-auto justify-center md:justify-end">
+                <div className="flex items-center gap-3 w-full md:w-auto">
                     <span className="text-xs font-bold text-text-muted uppercase tracking-wider">
                         Speed
                     </span>
-                    <div className="flex items-center gap-3 bg-surface border border-border rounded-xl px-3 py-1.5 min-w-[140px]">
+                    <div className="flex items-center gap-3 bg-surface border border-border rounded-xl px-3 py-1.5 flex-1 md:flex-none md:min-w-[140px]">
                         <span className="text-xs font-mono font-medium text-text-secondary w-8 text-right">
                             {speed}x
                         </span>
